@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>People Online</title>
+  </head>
+  <body class="w-screen h-screen flex flex-col items-center justify-center bg-[url('../assets/images/peopleonline.jpg')] bg-cover">
+    <div class="p-16 bg-red-700/50 flex flex-col items-center justify-center gap-16 rounded-md">
+      <h1 class="text-4xl font-bold text-white">People entered:</h1>
+      <h2 id="count-el" class="text-5xl font-semibold text-white">0</h2>
+      <button id="increment-btn" onclick="increment()" class="px-6 py-3 rounded-lg bg-orange-600 text-white">Increment</button>
+      <button id="save-btn" onclick="save()" class="px-6 py-3 rounded-lg bg-fuchsia-700 text-white">SAVE</button>
+      <p id="save-el" class="text-2xl text-white">Previous entries: </p>
+      <script src="../scripts/peopleonline.js"></script>
+    </div>
+  </body>
+</html>
