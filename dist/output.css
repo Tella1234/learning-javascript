@@ -468,6 +468,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -476,8 +481,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-screen {
   width: 100vw;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[1px\] {
+  width: 1px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-col {
@@ -492,8 +517,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-16 {
   gap: 4rem;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .rounded-md {
@@ -509,9 +546,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(28 28 28 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#1f2937\] {
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-\[\#242424\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(36 36 36 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#d2d2d2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 210 210 / var(--tw-bg-opacity));
 }
 
 .bg-red-700\/50 {
@@ -528,16 +574,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(162 28 175 / var(--tw-bg-opacity));
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .bg-\[url\(\'\.\.\/assets\/images\/peopleonline\.jpg\'\)\] {
   background-image: url('../assets/images/peopleonline.jpg');
+}
+
+.from-\[\#585DFE\] {
+  --tw-gradient-from: #585DFE;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(88 93 254 / 0));
+}
+
+.to-\[\#FB3796\] {
+  --tw-gradient-to: #FB3796;
 }
 
 .bg-cover {
   background-size: cover;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-16 {
   padding: 4rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-6 {
@@ -548,6 +620,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-4xl {
@@ -565,15 +656,51 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.font-extrabold {
+  font-weight: 800;
 }
 
 .font-semibold {
   font-weight: 600;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#d2d2d2\] {
+  --tw-text-opacity: 1;
+  color: rgb(210 210 210 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-center::-moz-placeholder {
+  text-align: center;
+}
+
+.placeholder\:text-center:-ms-input-placeholder {
+  text-align: center;
+}
+
+.placeholder\:text-center::placeholder {
+  text-align: center;
+}
+
+.placeholder\:text-white::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-white:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-white::placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
