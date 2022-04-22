@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="../dist/output.css">
     <title>Metric/Imperial unit conversion</title>
 </head>
-<body class="w-screen h-screen flex flex-col items-center justify-center bg-[#1c1c1c]">
-    <div class="bg-gradient-to-r from-[#585DFE] to-[#FB3796] flex flex-col gap-7 items-center p-12 px-20 justify-center w-[500px]">
+<body class="w-screen h-screen flex flex-col items-center justify-center bg-[#1c1c1c] max-w-[500px]">
+    <div class="bg-gradient-to-r from-[#585DFE] to-[#FB3796] flex flex-col gap-7 items-center p-12 px-20 justify-center w-full">
         <p class="text-white font-extrabold text-xl">Metric/Imperial unit conversion</p>
         <input type="number" placeholder="0" class="bg-transparent text-3xl text-white font-extrabold w-[200px] text-center placeholder:text-white placeholder:text-center">
     </div>
-    <div class="bg-[#242424] flex flex-col gap-7 items-center p-10 justify-center w-[500px] mx-3 overflow-x-auto">
+    <div class="bg-[#242424] flex flex-col gap-7 items-center p-10 justify-center w-full mx-3 overflow-x-auto">
         <p class="text-lg font-semibold text-white">Length (Meter/Feet)</p>
-        <div class="flex gap-2 max-w-full">
+        <div class="flex gap-2 max-w-full mb-3">
             <div class="flex gap-2">
                 <p class="text-lg text-[#d2d2d2]" id="meters-input">0</p>
                 <p class="text-lg text-[#d2d2d2]">meters= </p>
@@ -27,6 +27,38 @@
                 <p class="text-lg text-[#d2d2d2]">feet=</p>
                 <p class="text-lg text-[#d2d2d2]" id="meters-output">0</p>
                 <p class="text-lg text-[#d2d2d2]">meters</p>
+            </div>
+        </div>
+        <p class="text-lg font-semibold text-white">Volume (Liters/Gallons)</p>
+        <div class="flex gap-2 max-w-full mb-3">
+            <div class="flex gap-2">
+                <p class="text-lg text-[#d2d2d2]" id="liters-input">0</p>
+                <p class="text-lg text-[#d2d2d2]">liters= </p>
+                <p class="text-lg text-[#d2d2d2]" id="gallons-output">0</p>
+                <p class="text-lg text-[#d2d2d2]">gallons</p>
+            </div>
+            <div class="h-full w-[1px] bg-[#d2d2d2] mx-3"></div>
+            <div class="flex gap-2">
+                <p class="text-lg text-[#d2d2d2]" id="gallons-input">0</p>
+                <p class="text-lg text-[#d2d2d2]">gallons=</p>
+                <p class="text-lg text-[#d2d2d2]" id="liters-output">0</p>
+                <p class="text-lg text-[#d2d2d2]">liters</p>
+            </div>
+        </div>
+        <p class="text-lg font-semibold text-white">Mass (Kilograms/Pounds)</p>
+        <div class="flex gap-2 max-w-full">
+            <div class="flex gap-2">
+                <p class="text-lg text-[#d2d2d2]" id="kg-input">0</p>
+                <p class="text-lg text-[#d2d2d2]">kilos= </p>
+                <p class="text-lg text-[#d2d2d2]" id="pounds-output">0</p>
+                <p class="text-lg text-[#d2d2d2]">pounds</p>
+            </div>
+            <div class="h-full w-[1px] bg-[#d2d2d2] mx-3"></div>
+            <div class="flex gap-2">
+                <p class="text-lg text-[#d2d2d2]" id="pounds-input">0</p>
+                <p class="text-lg text-[#d2d2d2]">pounds=</p>
+                <p class="text-lg text-[#d2d2d2]" id="kg-output">0</p>
+                <p class="text-lg text-[#d2d2d2]">kilos</p>
             </div>
         </div>
     </div>
