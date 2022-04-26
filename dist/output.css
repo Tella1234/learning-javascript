@@ -493,8 +493,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
-.w-\[500px\] {
-  width: 500px;
+.w-full {
+  width: 100%;
 }
 
 .w-\[200px\] {
@@ -505,16 +505,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1px;
 }
 
-.w-full {
-  width: 100%;
+.max-w-\[500px\] {
+  max-width: 500px;
 }
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[500px\] {
-  max-width: 500px;
 }
 
 .flex-col {
