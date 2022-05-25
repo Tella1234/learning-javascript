@@ -4,6 +4,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       'nunito': ['nunito', 'sans-serif'],
+      'karla': ['Karla', 'sans-serif'],
     },
   },
   plugins: [],
