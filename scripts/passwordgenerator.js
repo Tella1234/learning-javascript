@@ -1,17 +1,39 @@
-var password = document.getElementById("password");
 
 function genPassword() {
-    let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+";
-
-    for (i=0; i < 18; i++) {
-        let generate = letters(Math.floor(Math.random() * letters.length));
-        password.textContent = ""
-        password += generate;
+    const dotsEls = document.querySelectorAll(".dots");
+    for (let el of dotsEls) {
+        el.style.display = "none";
     }
 
-    console.log("password")
-}
+    function password() {
+        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+";
+        let password = "";
 
-genPassword()
+        for (var i = 0; i < 18; i++ ) {
+            let generate = letters[Math.floor(Math.random() * 76)];
+            password += generate;
+        }
 
-console.log("password")
+        return password;
+
+    }
+    
+    const passwordEls = document.querySelectorAll(".password")
+    for (let el of passwordEls) {
+        el.innerHTML = password();
+    }
+
+    
+}    
+
+    function clearPassword() {
+        const dotsEls = document.querySelectorAll(".dots");
+        for (let el of dotsEls) {
+            el.style.display = "block";
+        }
+    
+        const passwordEls = document.querySelectorAll(".password")
+        for (let el of passwordEls) {
+            el.innerHTML = "";
+        }
+    }

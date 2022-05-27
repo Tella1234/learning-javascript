@@ -491,16 +491,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .mb-8{
@@ -563,12 +555,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 223px;
 }
 
-.w-\[311px\]{
-  width: 311px;
-}
-
 .w-\[211px\]{
   width: 211px;
+}
+
+.w-\[123px\]{
+  width: 123px;
 }
 
 .max-w-\[500px\]{
@@ -581,6 +573,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[550px\]{
   max-width: 550px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .grid-cols-2{
@@ -599,10 +595,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.justify-between{
-  justify-content: space-between;
-}
-
 .gap-8{
   gap: 2rem;
 }
@@ -615,16 +607,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
-.gap-16{
-  gap: 4rem;
-}
-
 .gap-3{
   gap: 0.75rem;
 }
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-16{
+  gap: 4rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .overflow-x-auto{
@@ -671,20 +667,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(210 210 210 / var(--tw-bg-opacity));
 }
 
-.bg-red-700\/50{
-  background-color: rgb(185 28 28 / 0.5);
-}
-
-.bg-orange-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
-}
-
-.bg-fuchsia-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(162 28 175 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#1f2937\]{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -703,6 +685,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#273549\]{
   --tw-bg-opacity: 1;
   background-color: rgb(39 53 73 / var(--tw-bg-opacity));
+}
+
+.bg-red-700\/50{
+  background-color: rgb(185 28 28 / 0.5);
+}
+
+.bg-orange-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
+.bg-fuchsia-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(162 28 175 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#9e0404\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(158 4 4 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/assets\/images\/board\.jpg\'\)\]{
@@ -756,19 +757,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 5rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .px-14{
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-4{
@@ -781,13 +777,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.pt-2{
-  padding-top: 0.5rem;
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-center{
@@ -822,6 +819,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
@@ -830,15 +832,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-\[40px\]{
-  font-size: 40px;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -851,6 +844,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .capitalize{
