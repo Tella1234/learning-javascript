@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Chinchin</title>
   </head>
-  <body class="w-full overflow-auto flex flex-col items-center justify-center bg-blue-700 text-white font-semibold p-8 gap-5">
-      <p id="chin"></p>
-      <button id="cup" class="w-72 p-4  rounded-md bg-pink-700 font-semibold">Take Chinchin with cup</button>
-      <button id="pieces" class="w-72 p-4  rounded-md bg-red-700 text-base font-semibold">Take Chin by pieces</button>
-      <div class="w-72 p-4 flex justify-center items-center gap-2 bg-red-700">
+  <body class="w-full overflow-auto flex flex-col items-center justify-center bg-[url('../assets/images/chinchin.jpg')] bg-repeat bg-cover text-white font-semibold p-8 gap-5">
+      <p id="chin" class="font-bold text-3xl bg-gradient-to-r from-[#0e9c2d] to-[#531b9c] p-4 rounded-md"></p>
+      <button id="cup" class="w-72 p-4  rounded-md bg-[#6b1e97] font-semibold">Take Chinchin with cup</button>
+      <button id="pieces" class="w-72 p-4  rounded-md bg-[#6b1e97] text-base font-semibold">Take Chin by pieces</button>
+      <div class="w-72 p-4 flex justify-center items-center gap-2 bg-[#6b1e97] rounded-md">
           <p>Take Chin by</p>
-          <input type="number" placeholder="0" class="w-16 h-full bg-white/100 text-black text-base text-center" id="input">
-          <p>Pieces</p>
+          <input type="number" name="take chinchin" placeholder="0" min="1" max="99" class="w-12 h-full py-3 bg-green-100/10 placeholder:text-white text-white text-base text-center" id="input">
+          <label for="take chinchin">Pieces</label>
+          <button class="w-max py-2 px-4 rounded-md bg-yellow-500 hover:bg-yellow-600 text-base font-semibold" id="take">Take</button>
       </div>
-      <button id="refill" class="w-72 p-4  rounded-md bg-gray-700 font-semibold">Refill Chin</button>
+      <button id="refill" class="w-72 p-4  rounded-md bg-[#6b1e97] hover:bg-[#4f1174] font-semibold">Refill Chin</button>
     <script src="../scripts/chin.js"></script>
   </body>
 </html>
