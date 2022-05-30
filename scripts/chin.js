@@ -19,7 +19,7 @@ cupBtn.addEventListener("click", function() {
 
 piecesBtn.addEventListener("click", function() {
     if (chinKg == 0) {
-        alert("You are out of Chin Chin");
+        alert("You are out of Chin Chin, Please refill");
     } else {
         chinKg -= 1;
     }
