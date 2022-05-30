@@ -536,6 +536,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 39px;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
+.h-8{
+  height: 2rem;
+}
+
 .max-h-\[550px\]{
   max-height: 550px;
 }
@@ -574,6 +582,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[211px\]{
   width: 211px;
+}
+
+.w-14{
+  width: 3.5rem;
+}
+
+.w-36{
+  width: 9rem;
+}
+
+.w-72{
+  width: 18rem;
+}
+
+.w-32{
+  width: 8rem;
+}
+
+.w-16{
+  width: 4rem;
 }
 
 .max-w-\[500px\]{
@@ -660,6 +688,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-style: none;
 }
 
+.border-neutral-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(163 163 163 / var(--tw-border-opacity));
+}
+
 .bg-\[\#daa520\]{
   --tw-bg-opacity: 1;
   background-color: rgb(218 165 32 / var(--tw-bg-opacity));
@@ -723,6 +756,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(162 28 175 / var(--tw-bg-opacity));
 }
 
+.bg-blue-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.bg-pink-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
+}
+
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-white\/100{
+  background-color: rgb(255 255 255 / 1);
+}
+
 .bg-\[url\(\'\.\.\/assets\/images\/board\.jpg\'\)\]{
   background-image: url('../assets/images/board.jpg');
 }
@@ -762,6 +819,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-16{
   padding: 4rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .py-\[5px\]{
@@ -908,6 +973,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#55f991\]{
   --tw-text-opacity: 1;
   color: rgb(85 249 145 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .shadow-\[0px_1px_2px_rgba\(0\2c 0\2c 0\2c 0\.05\)\]{
