@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /*
-! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -560,7 +560,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --bs-body-bg: #fff;
 }
 
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu){
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3){
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu){
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -568,6 +578,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .input-group.has-validation > .dropdown-toggle:nth-last-child(n+4){
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .is-invalid ~ .invalid-feedback{
@@ -863,6 +879,17 @@ textarea.form-control.is-invalid{
 
 .navbar-dark .navbar-nav .nav-link.active{
   color: #fff;
+}
+
+.accordion-button:not(.collapsed){
+  color: #2563eb;
+  background-color: #fff;
+  box-shadow: inset 0 -1px 0 #e5e7eb;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232563eb'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed{
@@ -3887,6 +3914,18 @@ textarea.form-control.is-invalid{
   top: 0px;
 }
 
+.-left-\[162px\]{
+  left: -162px;
+}
+
+.right-\[162px\]{
+  right: 162px;
+}
+
+.-right-\[162px\]{
+  right: -162px;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -3919,16 +3958,16 @@ textarea.form-control.is-invalid{
   margin-bottom: 1.5rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .mb-8{
   margin-bottom: 2rem;
 }
 
 .mb-3{
   margin-bottom: 0.75rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
 }
 
 .mb-2{
@@ -4023,10 +4062,6 @@ textarea.form-control.is-invalid{
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-4\/5{
-  width: 80%;
 }
 
 .w-\[300px\]{
@@ -4233,6 +4268,11 @@ textarea.form-control.is-invalid{
   background-color: #ff000070;
 }
 
+.bg-\[\#ea1d1d\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 29 29 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#1c1c1c\]{
   --tw-bg-opacity: 1;
   background-color: rgb(28 28 28 / var(--tw-bg-opacity));
@@ -4291,6 +4331,22 @@ textarea.form-control.is-invalid{
   background-color: rgb(162 28 175 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#ea1d1db9\]{
+  background-color: #ea1d1db9;
+}
+
+.bg-\[\#e1262687\]{
+  background-color: #e1262687;
+}
+
+.bg-\[\#ffffff87\]{
+  background-color: #ffffff87;
+}
+
+.bg-\[\#b0eeffdd\]{
+  background-color: #b0eeffdd;
+}
+
 .bg-\[url\(\'\.\.\/assets\/images\/board\.jpg\'\)\]{
   background-image: url('../assets/images/board.jpg');
 }
@@ -4321,9 +4377,19 @@ textarea.form-control.is-invalid{
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(148 13 108 / 0));
 }
 
+.from-\[\#a10f0feb\]{
+  --tw-gradient-from: #a10f0feb;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(161 15 15 / 0));
+}
+
 .from-\[\#585DFE\]{
   --tw-gradient-from: #585DFE;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(88 93 254 / 0));
+}
+
+.from-\[\#7c1010bb\]{
+  --tw-gradient-from: #7c1010bb;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(124 16 16 / 0));
 }
 
 .to-\[\#531b9c\]{
@@ -4334,8 +4400,20 @@ textarea.form-control.is-invalid{
   --tw-gradient-to: #1497b198;
 }
 
+.to-\[\#4de1ff\]{
+  --tw-gradient-to: #4de1ff;
+}
+
 .to-\[\#FB3796\]{
   --tw-gradient-to: #FB3796;
+}
+
+.to-\[\#eeeeeeaa\]{
+  --tw-gradient-to: #eeeeeeaa;
+}
+
+.to-\[\#bbbbbbaa\]{
+  --tw-gradient-to: #bbbbbbaa;
 }
 
 .bg-cover{
@@ -4358,16 +4436,16 @@ textarea.form-control.is-invalid{
   padding: 1rem;
 }
 
+.p-0{
+  padding: 0px;
+}
+
 .p-16{
   padding: 4rem;
 }
 
 .p-3{
   padding: 0.75rem;
-}
-
-.p-0{
-  padding: 0px;
 }
 
 .p-12{
