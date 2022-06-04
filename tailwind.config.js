@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./pages/**/*.{html,js}"],
+  content: ["./pages/**/*.{html,js}", './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     extend: {},
     fontFamily: {
@@ -7,5 +7,7 @@ module.exports = {
       'karla': ['Karla', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin.js')
+  ],
 }
