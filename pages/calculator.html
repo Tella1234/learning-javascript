@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Calculator</title>
+  </head>
+  <body class="w-full h-screen flex items-center justify-center bg-gradient-to-r from-[#A3CABB] to-[#98D7CC] font-nunito">
+      <div class="flex flex-col bg-[#F4FDFB] rounded-3xl w-[400px]">
+        <div class="flex items-center justify-between p-4">
+          <div class="flex gap-3">
+            <div class="w-2 h-2 rounded-full bg-red-500"></div>
+            <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
+            <div class="w-2 h-2 rounded-full bg-green-500"></div>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-no-repeat bg-contain bg-[#e6f7f3] border-gray-200 border-2 focus:outline-none cursor-pointer shadow-sm checked:bg-[#18D4A3] checked:border-[#18d4a3]" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          </div>
+        </div>
+        <div class="w-full p-6 h-[120px] text-right space-y-3">
+          <p class="text-2xl">25*5</p>
+          <p class="text-5xl font-semibold">125</p>
+        </div>
+      </div>
+    <script src="../scripts/calculator.js"></script>
+  </body>
+</html>

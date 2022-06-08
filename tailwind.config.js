@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       'nunito': ['nunito', 'sans-serif'],
       'karla': ['Karla', 'sans-serif'],
+      'kaushan': ['Kaushan Script', 'cursive'],
     },
   },
   plugins: [
