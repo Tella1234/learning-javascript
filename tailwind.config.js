@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./pages/**/*.{html,js}", './node_modules/tw-elements/dist/js/**/*.js'],
+  darkMode: 'class',
   theme: {
     extend: {},
     fontFamily: {
