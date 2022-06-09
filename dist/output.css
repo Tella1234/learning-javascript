@@ -4524,6 +4524,14 @@ textarea.form-control.is-invalid{
   height: 120px;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
+.h-14{
+  height: 3.5rem;
+}
+
 .max-h-\[550px\]{
   max-height: 550px;
 }
@@ -4608,6 +4616,10 @@ textarea.form-control.is-invalid{
 
 .w-\[400px\]{
   width: 400px;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .max-w-\[500px\]{
@@ -4932,6 +4944,16 @@ textarea.form-control.is-invalid{
 .bg-\[\#e6f7f3\]{
   --tw-bg-opacity: 1;
   background-color: rgb(230 247 243 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f4fdfb\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 253 251 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/assets\/images\/board\.jpg\'\)\]{
