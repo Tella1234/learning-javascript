@@ -15,8 +15,8 @@
       }
   </script>
   </head>
-  <body class="w-full h-screen flex items-center justify-center bg-gradient-to-r from-[#A3CABB] to-[#98D7CC] font-nunito">
-      <div class="flex flex-col bg-[#acf2e3] dark:bg-[#202A41] sm:rounded-3xl w-full sm:w-[400px] h-screen sm:h-max">
+  <body class="w-full h-screen flex items-center justify-center bg-gradient-to-r from-[#A3CABB] to-[#98D7CC] font-nunito sm:py-5 overflow-hidden">
+      <div class="flex flex-col bg-[#acf2e3] dark:bg-[#202A41] sm:rounded-3xl w-full sm:w-[350px] h-screen sm:h-full">
         <div class="flex items-center justify-between p-4 px-6 sm:px-4">
           <div class="flex gap-3">
             <div class="w-[10px] h-[10px] rounded-full bg-red-500"></div>
@@ -30,31 +30,31 @@
           </button>
           </div>
         </div>
-        <div class="w-full p-4 sm:p-6 h-[120px] text-right" id="output">
+        <div class="w-full p-4 sm:p-5 h-[120px] sm:h-max text-right" id="output">
           <p class="text-2xl dark:text-[#00b18b]" id="upper">0</p>
           <p class="text-5xl font-semibold dark:text-[#00b18b] mt-1 sm:mt-3"  onclick="" id="lower">0</p>
         </div>
-        <div class="grid grid-cols-4 gap-4 sm:gap-7 px-auto bg-[#ffffff] dark:bg-[#2F3851] p-6 sm:rounded-b-3xl h-full" id="input">
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#acf2e3] text-xl sm:text-3xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressAllClear()">AC</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#acf2e3] text-2xl sm:text-3xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="changeSign()">&PlusMinus;</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#acf2e3] text-2xl sm:text-3xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressOperator(this)">&div;</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#acf2e3] text-2xl sm:text-3xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressDelete()">&#8678;</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">7</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">8</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">9</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#acf2e3] text-2xl sm:text-3xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressOperator(this)">&times;</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">4</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">5</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">6</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#acf2e3] text-2xl sm:text-3xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressOperator(this)">&minus;</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">1</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">2</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">3</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#acf2e3] text-2xl sm:text-3xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressOperator(this)">+</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">0</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressDot()">.</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f4fdfb] text-2xl sm:text-3xl font-semibold dark:text-[#00b18b]  dark:bg-[#20293e]"  onclick="pressOperator(this)">%</button>
-          <button class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#00b18b] text-2xl sm:text-3xl font-semibold"  onclick="pressEqual()">=</button>
+        <div class="grid grid-cols-4 gap-4 sm:gap-5 px-auto bg-[#ffffff] dark:bg-[#2F3851] p-3 sm:rounded-b-3xl h-full" id="input">
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#acf2e3] text-xl sm:text-2xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressAllClear()">AC</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#acf2e3] text-2xl sm:text-2xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="changeSign()">&PlusMinus;</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#acf2e3] text-2xl sm:text-2xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressOperator(this)">&div;</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#acf2e3] text-2xl sm:text-2xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressDelete()">&#8678;</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">7</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">8</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">9</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#acf2e3] text-2xl sm:text-2xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressOperator(this)">&times;</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">4</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">5</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">6</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#acf2e3] text-2xl sm:text-2xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressOperator(this)">&minus;</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">1</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">2</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">3</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#acf2e3] text-2xl sm:text-2xl font-semibold dark:text-[#00b18b] dark:bg-[#202A41]"  onclick="pressOperator(this)">+</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressNum(this)">0</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-gray-400  dark:bg-[#20293e]"  onclick="pressDot()">.</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#f4fdfb] text-2xl sm:text-2xl font-semibold dark:text-[#00b18b]  dark:bg-[#20293e]"  onclick="pressOperator(this)">%</button>
+          <button class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#00b18b] text-2xl sm:text-2xl font-semibold"  onclick="pressEqual()">=</button>
         </div>
       </div>
     <script src="../scripts/calculator.js"></script>
