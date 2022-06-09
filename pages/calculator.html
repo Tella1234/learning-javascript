@@ -8,23 +8,42 @@
     <title>Calculator</title>
   </head>
   <body class="w-full h-screen flex items-center justify-center bg-gradient-to-r from-[#A3CABB] to-[#98D7CC] font-nunito">
-      <div class="flex flex-col bg-[#F4FDFB] rounded-3xl w-[400px]">
+      <div class="flex flex-col bg-[#acf2e3] rounded-3xl w-[400px]">
         <div class="flex items-center justify-between p-4">
           <div class="flex gap-3">
-            <div class="w-2 h-2 rounded-full bg-red-500"></div>
-            <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
-            <div class="w-2 h-2 rounded-full bg-green-500"></div>
+            <div class="w-[10px] h-[10px] rounded-full bg-red-500"></div>
+            <div class="w-[10px] h-[10px] rounded-full bg-yellow-500"></div>
+            <div class="w-[10px] h-[10px] rounded-full bg-green-500"></div>
           </div>
           <div class="form-check form-switch">
-            <input class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-no-repeat bg-contain bg-[#e6f7f3] border-gray-200 border-2 focus:outline-none cursor-pointer shadow-sm checked:bg-[#18D4A3] checked:border-[#18d4a3]" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-no-repeat bg-contain bg-[#e6f7f3] border-none border-2 focus:outline-none cursor-pointer shadow-sm checked:bg-[#00b18b] checked:border-[#00b18b]" type="checkbox" role="switch" id="flexSwitchCheckDefault">
           </div>
         </div>
-        <div class="w-full p-6 h-[120px] text-right space-y-3">
-          <p class="text-2xl">25*5</p>
-          <p class="text-5xl font-semibold">125</p>
+        <div class="w-full p-6 h-[120px] text-right space-y-3" id="output">
+          <p class="text-2xl" id="upper"></p>
+          <p class="text-5xl font-semibold"  onclick="" id="lower">0</p>
         </div>
-        <div class="grid bg-white p-6">
-          <button class="flex items-center justify-center w-14 h-14 rounded-full bg-[#f4fdfb] text-3xl font-semibold">C</button>
+        <div class="grid grid-cols-4 gap-7 px-auto bg-[#ffffff] p-6 rounded-b-3xl" id="input">
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#acf2e3] text-3xl font-semibold"  onclick="pressAllClear()">AC</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#acf2e3] text-3xl font-semibold"  onclick="changeSign()">&PlusMinus;</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#acf2e3] text-3xl font-semibold"  onclick="pressOperator(this)">&div;</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#acf2e3] text-3xl font-semibold"  onclick="pressDelete()">&#8678;</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">7</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">8</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">9</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#acf2e3] text-3xl font-semibold"  onclick="pressOperator(this)">&times;</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">4</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">5</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">6</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#acf2e3] text-3xl font-semibold"  onclick="pressOperator(this)">&minus;</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">1</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">2</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">3</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#acf2e3] text-3xl font-semibold"  onclick="pressOperator(this)">+</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressNum(this)">0</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressDot()">.</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#f4fdfb] text-3xl font-semibold"  onclick="pressOperator(this)">%</button>
+          <button class="flex items-center justify-center w-16 h-16 rounded-full bg-[#00b18b] text-3xl font-semibold"  onclick="pressEqual()">=</button>
         </div>
       </div>
     <script src="../scripts/calculator.js"></script>
