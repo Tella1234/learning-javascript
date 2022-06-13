@@ -45,6 +45,8 @@ take.addEventListener('click', function() {
         alert("You don't have enough Chin Chin !!!");
     } else if (chinKg > inputValue) {
         chinKg -= inputValue;
+        inputValue = '';
+        inputNumber.value = '';
     }
     chin.innerText = "Chin Chin: " + chinKg + "Kg";
 })
