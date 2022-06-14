@@ -4620,6 +4620,10 @@ textarea.form-control.is-invalid{
   border-radius: 1.5rem;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
 .border-0{
   border-width: 0px;
 }
@@ -4763,6 +4767,85 @@ textarea.form-control.is-invalid{
 .bg-fuchsia-700{
   --tw-bg-opacity: 1;
   background-color: rgb(162 28 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 182 212 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#36fe18\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(54 254 24 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2aa217\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 162 23 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#a28f17\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(162 143 23 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2717a2\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 23 162 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#331ed0\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 30 208 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1673d0\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 115 208 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#b116d0\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(177 22 208 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#5716d0\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 22 208 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#d01648\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(208 22 72 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fa2f65\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 47 101 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#e93e6b\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 62 107 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ce1244\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(206 18 68 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#901435\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(144 20 53 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#901435c4\]{
+  background-color: #901435c4;
 }
 
 .bg-\[url\(\'\.\.\/assets\/images\/board\.jpg\'\)\]{
@@ -5065,6 +5148,15 @@ textarea.form-control.is-invalid{
 .text-\[\#55f991\]{
   --tw-text-opacity: 1;
   color: rgb(85 249 145 / var(--tw-text-opacity));
+}
+
+.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.opacity-50{
+  opacity: 0.5;
 }
 
 .shadow-\[0_5px_20px_8px_rgba\(0\2c 0\2c 0\2c 0\.7\)\]{

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Quiz</title>
+  </head>
+  <body class="font-nunito w-full h-screen overflow-auto flex flex-col items-center justify-center bg-gray-300">
+    <section class="bg-[#901435c4] p-8 rounded" id="quiz">
+        <!-- Questions -->
+        <div id="questions">
+            <h3 class="">Question <span id="questionNumber">1</span> <span class="opacity-50">out of <span id="questionsTotal">25</span></span></h3>
+
+            <div class="">
+                <h2 id="questionTitle">How many «principles of good design» has Dieter Rams defined?</h2>
+            </div>
+
+            <div class="">
+                <form id="answers" action="javascript:void(0);" class="">
+                    <div class="answers">
+                        <div class="answer">
+                            <input type="radio" name="answer" value="12" id="answer1" required onchange="processAnswer(this)" />
+                            <label id="labelForAnswer1" for="answer1">
+                                <span id="answer1Title">12</span>
+                                <div id="iconForAnswer1" class="icon"></div>
+                            </label>
+                        </div>
+
+                        <div class="answer">
+                            <input type="radio" name="answer" value="10" id="answer2" required onchange="processAnswer(this)" />
+                            <label id="labelForAnswer2" for="answer2">
+                                <span id="answer2Title">10</span>
+                                <div id="iconForAnswer2" class="icon"></div>
+                            </label>
+                        </div>
+                        
+                        <div class="answer">
+                            <input type="radio" name="answer" value="7" id="answer3" required onchange="processAnswer(this)" />
+                            <label id="labelForAnswer3" for="answer3">
+                                <span id="answer3Title">7</span>
+                                <div id="iconForAnswer3" class="icon"></div>
+                            </label>
+                        </div>                        
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- Time's up message -->
+        <div id="timeUp">
+            <h3 class="light">⌛ Time’s up!</h3>
+        </div>
+
+        <!-- Rules -->
+        <div id="rules">
+            <h3 class="light">🏁 &nbsp;Are you ready?</h3>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-4">
+                    <h2>Let's see how many questions you can answer:</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="rules-list col-10 col-sm-8 col-md-5 col-lg-4 col-xl-3">
+                    <div>
+                        <span style="color: #AD8EEF">&mdash;&nbsp;</span> There are <span class="font-weight-semibold"><span id="rulesQuestionsTotal">multiple</span> questions</span>
+                    </div>
+                    <hr />
+                    <div>
+                        <span style="color: #AD8EEF">&mdash;&nbsp;</span> You need to <span class="font-weight-semibold">pick 1 answer</span>
+                    </div>
+                    <hr />
+                    <div>
+                        <span style="color: #AD8EEF">&mdash;&nbsp;</span> You have <span class="font-weight-semibold"><span id="rulesTimeMaximum">a few</span> sec for each</span> question
+                    </div>
+                    <hr />
+                    <div>
+                        <span style="color: #AD8EEF">&mdash;&nbsp;</span> It takes <span class="font-weight-semibold">no longer than <span id="rulesTimeTotal">6</span> mins </span> to complete
+                    </div>                    
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Results -->
+        <div id="results">
+            <h3 id="resultsTitle" class="light">💪🏽 You made it!</h3>
+
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-6 col-lg-5 col-xl-3 text-align-center margin-top-large margin-bottom-large">
+
+                    <div class="result">
+                        <span id="totalNumberOfQuestionsAnsweredCorrectly" class="value">—</span>
+
+                        <div class="labels">
+                            <span class="units">questions</span>
+                            <span class="maximum">out of <span id="totalNumberOfQuestions">—</span></span>
+                        </div>
+
+                        <img id="resultDecoration" class="decoration" src="images/decoration-highlight.svg">
+                    </div>
+
+                    <div class="margin-top-large">⌛ In just <span id="totalTimeTookToAnswer">—</span></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- CTAs -->
+        <div id="ctas">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-6 col-lg-5 col-xl-3 text-align-center margin-top-small">
+
+                    <div id="quizCtas">
+                        <a id="startQuizButton" class="col-12 col-sm-12 btn btn-primary large" onclick="startQuiz(); mixpanel.track('Clicked Start Quiz in Quiz')">👉🏽 I’m ready — start the quiz</a>
+
+                        <a id="nextQuestionButton" class="col-12 col-sm-12 btn btn-primary large" onclick="displayQuestion(); mixpanel.track('Clicked Next Question in Quiz')">👉🏽 Next question</a>
+
+                        <a id="resultsButton" class="col-12 col-sm-12 btn btn-primary large" onclick="displayResults(); mixpanel.track('Clicked Results in Quiz')">🥁 See how you did</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+    <p>Designed by &copysr; Tella</p>
+    </footer>
+    <script src="../scripts/quiz.js"></script>
+  </body>
+</html>
