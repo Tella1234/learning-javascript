@@ -4414,12 +4414,24 @@ textarea.form-control.is-invalid{
   height: 39px;
 }
 
+.h-\[500px\]{
+  height: 500px;
+}
+
 .max-h-\[550px\]{
   max-height: 550px;
 }
 
 .max-h-screen{
   max-height: 100vh;
+}
+
+.max-h-\[500px\]{
+  max-height: 500px;
+}
+
+.max-h-\[600px\]{
+  max-height: 600px;
 }
 
 .w-screen{
@@ -4490,6 +4502,10 @@ textarea.form-control.is-invalid{
 
 .max-w-\[550px\]{
   max-width: 550px;
+}
+
+.max-w-\[350px\]{
+  max-width: 350px;
 }
 
 .transform{
@@ -4622,6 +4638,11 @@ textarea.form-control.is-invalid{
 
 .rounded{
   border-radius: 0.25rem;
+}
+
+.rounded-b-3xl{
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
 .border-0{
@@ -4774,76 +4795,6 @@ textarea.form-control.is-invalid{
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-cyan-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 182 212 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#36fe18\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(54 254 24 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2aa217\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(42 162 23 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#a28f17\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(162 143 23 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2717a2\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 23 162 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#331ed0\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 30 208 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1673d0\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 115 208 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#b116d0\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(177 22 208 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#5716d0\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(87 22 208 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#d01648\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(208 22 72 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#fa2f65\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 47 101 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#e93e6b\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(233 62 107 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ce1244\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(206 18 68 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#901435\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(144 20 53 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#901435c4\]{
   background-color: #901435c4;
 }
@@ -4961,6 +4912,10 @@ textarea.form-control.is-invalid{
   padding: 2.5rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .py-\[5px\]{
   padding-top: 5px;
   padding-bottom: 5px;
@@ -5009,6 +4964,16 @@ textarea.form-control.is-invalid{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .text-center{
@@ -5148,11 +5113,6 @@ textarea.form-control.is-invalid{
 .text-\[\#55f991\]{
   --tw-text-opacity: 1;
   color: rgb(85 249 145 / var(--tw-text-opacity));
-}
-
-.underline{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 
 .opacity-50{
@@ -5315,6 +5275,10 @@ textarea.form-control.is-invalid{
     height: 3.5rem;
   }
 
+  .sm\:max-h-\[500px\]{
+    max-height: 500px;
+  }
+
   .sm\:w-\[350px\]{
     width: 350px;
   }
@@ -5338,6 +5302,10 @@ textarea.form-control.is-invalid{
   .sm\:rounded-b-3xl{
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
+  }
+
+  .sm\:bg-gradient-to-r{
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
   }
 
   .sm\:p-5{
