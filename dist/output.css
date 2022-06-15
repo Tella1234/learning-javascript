@@ -4338,6 +4338,10 @@ textarea.form-control.is-invalid{
   margin-bottom: 0.5rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .block{
   display: block;
 }
@@ -4420,6 +4424,18 @@ textarea.form-control.is-invalid{
 
 .h-14{
   height: 3.5rem;
+}
+
+.h-2\/5{
+  height: 40%;
+}
+
+.h-3\/6{
+  height: 50%;
+}
+
+.h-3\/5{
+  height: 60%;
 }
 
 .max-h-\[550px\]{

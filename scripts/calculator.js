@@ -51,7 +51,7 @@ function pressEqual() {
   try {
     result = eval(exp);
     if (result.toString().indexOf(".") !== -1) {
-      result = result.toFixed(3);
+      result = result.toFixed(2);
     }
   } catch (e) {
     result = "Syntax Error";
