@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Prime Numbers Checker</title>
+  </head>
+  <body class="font-nunito w-full h-screen overflow-auto flex flex-col items-center justify-center bg-gray-300 text-white font-semibold p-8 gap-5">
+    <p class="text-4xl text-center text-black">Prime Number Checker</p>   
+
+    <p class="w-72 font-bold text-3xl bg-[#960d0d] p-4 rounded-md text-center">Enter a positive number</p>   
+    <div class="w-72 p-4 flex justify-center items-center gap-2 bg-[#960d0d] rounded-md">
+        <input type="number" name="take chinchin" placeholder="0" min="1" max="99" class="w-full h-full py-3 bg-green-100/10 placeholder:text-white text-white text-base text-center" id="input">
+        <button class="w-max py-2 px-4 rounded-md bg-yellow-500 hover:bg-yellow-600 text-base font-semibold" id="take">Check</button>
+    </div>
+    <p id="output" class="w-72 p-4  rounded-md bg-[#960d0d] font-semibold text-center">Answer Here</p>
+    <script src="../scripts/primenumbers.js"></script>
+  </body>
+</html>

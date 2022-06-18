@@ -4220,10 +4220,6 @@ textarea.form-control.is-invalid{
   width: 5rem;
 }
 
-.w-3\/5{
-  width: 60%;
-}
-
 .w-4\/5{
   width: 80%;
 }
@@ -4545,14 +4541,19 @@ textarea.form-control.is-invalid{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-blue-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
-}
-
 .bg-blue-700{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#c00303\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 3 3 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#960d0d\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(150 13 13 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/assets\/images\/board\.jpg\'\)\]{
@@ -4600,6 +4601,16 @@ textarea.form-control.is-invalid{
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(88 93 254 / 0));
 }
 
+.from-\[\#9c8001\]{
+  --tw-gradient-from: #9c8001;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(156 128 1 / 0));
+}
+
+.from-\[\#e4bc0d\]{
+  --tw-gradient-from: #e4bc0d;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(228 188 13 / 0));
+}
+
 .to-\[\#98D7CC\]{
   --tw-gradient-to: #98D7CC;
 }
@@ -4618,6 +4629,14 @@ textarea.form-control.is-invalid{
 
 .to-\[\#FB3796\]{
   --tw-gradient-to: #FB3796;
+}
+
+.to-\[\#cc4c4c\]{
+  --tw-gradient-to: #cc4c4c;
+}
+
+.to-\[\#c00303\]{
+  --tw-gradient-to: #c00303;
 }
 
 .bg-cover{
@@ -4750,11 +4769,6 @@ textarea.form-control.is-invalid{
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-3{
@@ -4920,6 +4934,11 @@ textarea.form-control.is-invalid{
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .opacity-50{
   opacity: 0.5;
 }
@@ -5050,11 +5069,6 @@ textarea.form-control.is-invalid{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.after\:content-\[\'\\f10e\'\]::after{
-  --tw-content: '\f10e';
-  content: var(--tw-content);
-}
-
 .hover\:bg-yellow-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
@@ -5073,6 +5087,11 @@ textarea.form-control.is-invalid{
 .hover\:bg-blue-800:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#640909\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 9 9 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover{
