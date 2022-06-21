@@ -4910,6 +4910,11 @@ textarea.form-control.is-invalid{
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
+.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .opacity-50{
   opacity: 0.5;
 }
