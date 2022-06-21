@@ -4046,16 +4046,16 @@ textarea.form-control.is-invalid{
   margin-bottom: 0.25rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
 }
 
 .block{
@@ -4224,10 +4224,6 @@ textarea.form-control.is-invalid{
   width: 5rem;
 }
 
-.w-4\/5{
-  width: 80%;
-}
-
 .max-w-\[500px\]{
   max-width: 500px;
 }
@@ -4382,10 +4378,6 @@ textarea.form-control.is-invalid{
 
 .border-2{
   border-width: 2px;
-}
-
-.border-4{
-  border-width: 4px;
 }
 
 .border-none{
@@ -4556,16 +4548,6 @@ textarea.form-control.is-invalid{
 .bg-blue-600{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-blue-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/assets\/images\/board\.jpg\'\)\]{
@@ -4928,11 +4910,6 @@ textarea.form-control.is-invalid{
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
-.text-blue-700{
-  --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
-}
-
 .opacity-50{
   opacity: 0.5;
 }
@@ -5076,11 +5053,6 @@ textarea.form-control.is-invalid{
 .hover\:bg-black:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-blue-800:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-blue-600:hover{

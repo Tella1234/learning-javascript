@@ -13,12 +13,14 @@ take.addEventListener('click', function() {
         // looping through 2 to number-1
         for (let i = 2; i < inputValue; i++) {
             if ((inputValue % i) == 0) {
-                output.innerText= inputValue + " is not a Prime Number"
+                output.innerText= inputValue + " is not a Prime Number";
+                break;
             } else {
-                output.innerText= inputValue + " is a Prime Number"
+                output.innerText= inputValue + " is a Prime Number";
             }
         }
     } else {
         output.innerText= inputValue + " is Negative or zero!!! Enter a Positive Number"
     }
+    console.log(inputValue % 2)
 })
