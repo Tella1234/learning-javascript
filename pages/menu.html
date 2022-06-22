@@ -7,74 +7,26 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Menu</title>
   </head>
-  <body>
-    <section class="menu">
+  <body class="bg-gray-100 capitalize font-nunito">
+    <section class="py-20">
       <!-- title -->
-      <div class="title">
-        <h2>our menu</h2>
-        <div class="underline"></div>
+      <div class="text-center mb-8">
+        <h2 class="text-[#102a42] text-4xl">our menu</h2>
+        <div class="w-20 h-1 bg-[#c59d5f] mx-auto"></div>
       </div>
       <!-- filter buttons -->
-      <div class="btn-container">
-        <!-- <button type="button" class="filter-btn" data-id="all">all</button>
-        <button type="button" class="filter-btn" data-id="breakfast">
-          breakfast
+      <div class="mb-16 flex justify-center">
+        <button type="button" class="bg-transparent border-2 border-[#c59d5f] mx-2 rounded-md py-2 px-3 text-[#c59d5f] cursor-pointer transition ease-in-out duration-500 hover:bg-[#c59d5f] hover:text-white" data-id="all">All</button>
+        <button type="button" class="bg-transparent border-2 border-[#c59d5f] mx-2 rounded-md py-2 px-3 text-[#c59d5f] cursor-pointer transition ease-in-out duration-500 hover:bg-[#c59d5f] hover:text-white" data-id="breakfast">
+          Breakfast
         </button>
-        <button type="button" class="filter-btn" data-id="lunch">lunch</button>
-        <button type="button" class="filter-btn" data-id="shakes">
+        <button type="button" class="bg-transparent border-2 border-[#c59d5f] mx-2 rounded-md py-2 px-3 text-[#c59d5f] cursor-pointer transition ease-in-out duration-500 hover:bg-[#c59d5f] hover:text-white" data-id="lunch">Lunch</button>
+        <button type="button" class="bg-transparent border-2 border-[#c59d5f] mx-2 rounded-md py-2 px-3 text-[#c59d5f] cursor-pointer transition ease-in-out duration-500 hover:bg-[#c59d5f] hover:text-white" data-id="Shakes">
           shakes
-        </button> -->
+        </button>
       </div>
       <!-- menu items -->
-      <div class="section-center">
-        <!-- single item -->
-        <article class="menu-item">
-          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
-          <div class="item-info">
-            <header>
-              <h4>buttermilk pancakes</h4>
-              <h4 class="price">$15</h4>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-              laboriosam excepturi! Quo, officia.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
-        <!-- single item -->
-        <article class="menu-item">
-          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
-          <div class="item-info">
-            <header>
-              <h4>buttermilk pancakes</h4>
-              <h4 class="price">$15</h4>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-              laboriosam excepturi! Quo, officia.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
-        <!-- single item -->
-        <article class="menu-item">
-          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
-          <div class="item-info">
-            <header>
-              <h4>buttermilk pancakes</h4>
-              <h4 class="price">$15</h4>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-              laboriosam excepturi! Quo, officia.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
+      <div class="w-[90vw] mx-auto max-w-6xl grid gap-y-12 gap-x-8 justify-center xl:grid-cols-2 section-center">
       </div>
     </section>
     <!-- javascript -->
