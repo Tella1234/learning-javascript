@@ -5177,6 +5177,11 @@ textarea.form-control.is-invalid{
   background-color: rgb(197 157 95 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[rgb\(197\2c 157\2c 95\)\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 157 95 / var(--tw-bg-opacity));
+}
+
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
