@@ -3999,6 +3999,11 @@ textarea.form-control.is-invalid{
   margin-right: auto;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -4007,11 +4012,6 @@ textarea.form-control.is-invalid{
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-2{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .mt-4{
@@ -4038,6 +4038,10 @@ textarea.form-control.is-invalid{
   margin-bottom: 2.5rem;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -4056,14 +4060,6 @@ textarea.form-control.is-invalid{
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
-}
-
-.mb-0{
-  margin-bottom: 0px;
 }
 
 .block{
@@ -4158,10 +4154,6 @@ textarea.form-control.is-invalid{
   height: 150px;
 }
 
-.h-52{
-  height: 13rem;
-}
-
 .max-h-\[550px\]{
   max-height: 550px;
 }
@@ -4236,6 +4228,10 @@ textarea.form-control.is-invalid{
   width: 211px;
 }
 
+.max-w-6xl{
+  max-width: 72rem;
+}
+
 .max-w-\[500px\]{
   max-width: 500px;
 }
@@ -4250,14 +4246,6 @@ textarea.form-control.is-invalid{
 
 .max-w-xl{
   max-width: 36rem;
-}
-
-.max-w-6xl{
-  max-width: 72rem;
-}
-
-.max-w-sm{
-  max-width: 24rem;
 }
 
 .transform{
@@ -4365,10 +4353,6 @@ textarea.form-control.is-invalid{
        column-gap: 2rem;
 }
 
-.gap-y-4{
-  row-gap: 1rem;
-}
-
 .overflow-auto{
   overflow: auto;
 }
@@ -4413,22 +4397,6 @@ textarea.form-control.is-invalid{
   border-width: 2px;
 }
 
-.border{
-  border-width: 1px;
-}
-
-.border-4{
-  border-width: 4px;
-}
-
-.border-b{
-  border-bottom-width: 1px;
-}
-
-.border-dotted{
-  border-style: dotted;
-}
-
 .border-none{
   border-style: none;
 }
@@ -4438,29 +4406,14 @@ textarea.form-control.is-invalid{
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-blue-600{
-  --tw-border-opacity: 1;
-  border-color: rgb(37 99 235 / var(--tw-border-opacity));
-}
-
 .border-\[\#c59d5f\]{
   --tw-border-opacity: 1;
   border-color: rgb(197 157 95 / var(--tw-border-opacity));
 }
 
-.border-gray-500{
+.border-blue-600{
   --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
-}
-
-.border-gray-300{
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.border-gray-400{
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
 }
 
 .bg-\[\#daa520\]{
@@ -4547,13 +4500,13 @@ textarea.form-control.is-invalid{
   background-color: rgb(197 157 95 / var(--tw-bg-opacity));
 }
 
+.bg-transparent{
+  background-color: transparent;
+}
+
 .bg-\[\#1c1c1c\]{
   --tw-bg-opacity: 1;
   background-color: rgb(28 28 28 / var(--tw-bg-opacity));
-}
-
-.bg-transparent{
-  background-color: transparent;
 }
 
 .bg-\[\#242424\]{
@@ -4791,6 +4744,11 @@ textarea.form-control.is-invalid{
   padding-bottom: 5rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -4826,15 +4784,6 @@ textarea.form-control.is-invalid{
   padding-bottom: 0.25rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -4853,10 +4802,6 @@ textarea.form-control.is-invalid{
 
 .font-karla{
   font-family: Karla, sans-serif;
-}
-
-.font-kaushan{
-  font-family: Kaushan Script, cursive;
 }
 
 .text-xl{
@@ -4967,6 +4912,16 @@ textarea.form-control.is-invalid{
   color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
+.text-\[\#102a42\]{
+  --tw-text-opacity: 1;
+  color: rgb(16 42 66 / var(--tw-text-opacity));
+}
+
+.text-\[\#c59d5f\]{
+  --tw-text-opacity: 1;
+  color: rgb(197 157 95 / var(--tw-text-opacity));
+}
+
 .text-\[\#d2d2d2\]{
   --tw-text-opacity: 1;
   color: rgb(210 210 210 / var(--tw-text-opacity));
@@ -4995,31 +4950,6 @@ textarea.form-control.is-invalid{
 .text-blue-600{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.text-\[\#c59d5f\]{
-  --tw-text-opacity: 1;
-  color: rgb(197 157 95 / var(--tw-text-opacity));
-}
-
-.text-\[\#102a42\]{
-  --tw-text-opacity: 1;
-  color: rgb(16 42 66 / var(--tw-text-opacity));
-}
-
-.text-\[\#617d98\]{
-  --tw-text-opacity: 1;
-  color: rgb(97 125 152 / var(--tw-text-opacity));
-}
-
-.text-\[\#7b99b5\]{
-  --tw-text-opacity: 1;
-  color: rgb(123 153 181 / var(--tw-text-opacity));
-}
-
-.text-\[\#698dae\]{
-  --tw-text-opacity: 1;
-  color: rgb(105 141 174 / var(--tw-text-opacity));
 }
 
 .opacity-50{
@@ -5167,19 +5097,14 @@ textarea.form-control.is-invalid{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-blue-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-\[\#c59d5f\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(197 157 95 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[rgb\(197\2c 157\2c 95\)\]:hover{
+.hover\:bg-blue-600:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(197 157 95 / var(--tw-bg-opacity));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover{
@@ -5259,10 +5184,6 @@ textarea.form-control.is-invalid{
     height: 3.5rem;
   }
 
-  .sm\:h-44{
-    height: 11rem;
-  }
-
   .sm\:max-h-\[596px\]{
     max-height: 596px;
   }
@@ -5275,25 +5196,12 @@ textarea.form-control.is-invalid{
     max-width: 350px;
   }
 
-  .sm\:max-w-2xl{
-    max-width: 42rem;
-  }
-
   .sm\:gap-5{
     gap: 1.25rem;
   }
 
   .sm\:gap-4{
     gap: 1rem;
-  }
-
-  .sm\:gap-y-0{
-    row-gap: 0px;
-  }
-
-  .sm\:gap-x-5{
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
   }
 
   .sm\:rounded-3xl{
@@ -5316,47 +5224,8 @@ textarea.form-control.is-invalid{
   }
 }
 
-@media (min-width: 768px){
-  .md\:h-44{
-    height: 11rem;
-  }
-
-  .md\:w-\[220px\]{
-    width: 220px;
-  }
-
-  .md\:max-w-\[640px\]{
-    max-width: 640px;
-  }
-
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:gap-y-0{
-    row-gap: 0px;
-  }
-
-  .md\:gap-x-5{
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
-  }
-}
-
 @media (min-width: 1280px){
-  .xl\:h-\[150px\]{
-    height: 150px;
-  }
-
   .xl\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-\[2250px_1fr\]{
-    grid-template-columns: 2250px 1fr;
-  }
-
-  .xl\:grid-cols-\[225px_1fr\]{
-    grid-template-columns: 225px 1fr;
   }
 }
