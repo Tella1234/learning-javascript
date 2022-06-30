@@ -83,34 +83,55 @@ const menu = [
 ];
 
 const sectionCenter = document.querySelector(".section-center");
-const filterBtns = document.querySelectorAll(".filter-btn");
+const buttonSection = document.querySelector(".button-section")
 
 // load items
 window.addEventListener("DOMContentLoaded", function () {
-  displayMenuItems(menu);
+  displayMenuItems(menu)
+  displayButtons()
 });
 
-// filter items
-filterBtns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    const category = e.currentTarget.dataset.id;
-    const menuCategory = menu.filter(function(menuItem) {
-        if(menuItem.category === category) {
-            return menuItem;
-        }
-    });
-    if (category === "all") {
-        displayMenuItems(menu);
-    } else {
-        displayMenuItems(menuCategory);
-    }
-  });
-});
+function displayButtons() {
+  const categories = menu.reduce(
+    function (values, item) {
+      if (!values.includes(item.category)) {
+        values.push(item.category);
+      }
+      return values;
+    },
+    ["all"]
+    );
+    const categoryBtns = categories
+      .map(function(category) {
+        return `<button type="button" class="bg-transparent capitalize border-2 border-[#c59d5f] mx-2 rounded-md py-2 px-3 text-[#c59d5f] cursor-pointer transition ease-in-out duration-500 hover:bg-[#c59d5f] hover:text-white filter-btn" data-id="${category}">${category}</button>`;
+      })
+      .join("");
+
+      buttonSection.innerHTML = categoryBtns;
+      const filterBtns = buttonSection.querySelectorAll(".filter-btn");
+
+      filterBtns.forEach(function(btn) {
+        btn.addEventListener("click", function(e){
+          const category = e.currentTarget.dataset.id;
+          const menuCategory = menu.filter (function (menuItem) {
+            if (menuItem.category === category) {
+              return menuItem;
+            }
+          });
+          if (category === "all") {
+            diplayMenuItems(menu);
+          } else {
+            displayMenuItems(menuCategory);
+          }
+        });
+      });
+}
 
 function displayMenuItems(menuItems) {
-  let displayMenu = menuItems.map(function (item) {
+  const displayMenu = menuItems
+  .map(function (item) {
     return `<article class="grid gap-y-4 gap-x-8 max-w-sm xl:grid-cols-[225px_1fr] md:gap-y-0 md:gap-x-5 md:max-w-[640px]">
-        <img src=${item.img} alt="${item.title}" class="object-cover h-52 md:h-44 w-full border-4 border-[#c59d5f] rounded-lg xl:h-[150px]" />
+        <img src=${item.img} alt="${item.title}" class="object-cover h-52 md:h-44 w-full border-4 border-[#c59d5f] rounded-lg xl:h-[150px]" >
         <div class="">
           <header class="flex justify-between border-b border-dotted border-gray-400">
             <h4 class="mb-2 font-semibold">${item.title}</h4>
@@ -119,8 +140,8 @@ function displayMenuItems(menuItems) {
           <p class="mb-0  pt-4 text-[#698dae]">${item.desc}</p>
         </div>
       </article>`;
-  });
-  displayMenu = displayMenu.join("");
-  sectionCenter.innerHTML = displayMenu;
-}
+  })
+  .join("");
 
+  sectionCenter.innerHTML = displayMenu
+}
