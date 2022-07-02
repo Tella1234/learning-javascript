@@ -3977,8 +3977,24 @@ textarea.form-control.is-invalid{
   right: -162px;
 }
 
+.bottom-3{
+  bottom: 0.75rem;
+}
+
+.left-3{
+  left: 0.75rem;
+}
+
 .-z-10{
   z-index: -10;
+}
+
+.z-\[999\]{
+  z-index: 999;
+}
+
+.-z-20{
+  z-index: -20;
 }
 
 .float-left{
@@ -3987,6 +4003,10 @@ textarea.form-control.is-invalid{
 
 .m-7{
   margin: 1.75rem;
+}
+
+.m-0{
+  margin: 0px;
 }
 
 .my-\[2px\]{
@@ -4046,6 +4066,10 @@ textarea.form-control.is-invalid{
   margin-bottom: 0.5rem;
 }
 
+.mb-0{
+  margin-bottom: 0px;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -4060,10 +4084,6 @@ textarea.form-control.is-invalid{
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mb-0{
-  margin-bottom: 0px;
 }
 
 .block{
@@ -4142,6 +4162,10 @@ textarea.form-control.is-invalid{
   height: 0.25rem;
 }
 
+.h-52{
+  height: 13rem;
+}
+
 .h-\[42px\]{
   height: 42px;
 }
@@ -4158,8 +4182,8 @@ textarea.form-control.is-invalid{
   height: 150px;
 }
 
-.h-52{
-  height: 13rem;
+.h-8{
+  height: 2rem;
 }
 
 .max-h-\[550px\]{
@@ -4236,8 +4260,20 @@ textarea.form-control.is-invalid{
   width: 211px;
 }
 
+.w-28{
+  width: 7rem;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
 .max-w-6xl{
   max-width: 72rem;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .max-w-\[500px\]{
@@ -4254,10 +4290,6 @@ textarea.form-control.is-invalid{
 
 .max-w-xl{
   max-width: 36rem;
-}
-
-.max-w-sm{
-  max-width: 24rem;
 }
 
 .transform{
@@ -4439,14 +4471,14 @@ textarea.form-control.is-invalid{
   border-color: rgb(197 157 95 / var(--tw-border-opacity));
 }
 
-.border-blue-600{
-  --tw-border-opacity: 1;
-  border-color: rgb(37 99 235 / var(--tw-border-opacity));
-}
-
 .border-gray-400{
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-blue-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
 }
 
 .bg-\[\#daa520\]{
@@ -4608,6 +4640,16 @@ textarea.form-control.is-invalid{
 .bg-blue-600{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-blue-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/assets\/images\/board\.jpg\'\)\]{
@@ -4959,6 +5001,11 @@ textarea.form-control.is-invalid{
   color: rgb(197 157 95 / var(--tw-text-opacity));
 }
 
+.text-\[\#698dae\]{
+  --tw-text-opacity: 1;
+  color: rgb(105 141 174 / var(--tw-text-opacity));
+}
+
 .text-\[\#d2d2d2\]{
   --tw-text-opacity: 1;
   color: rgb(210 210 210 / var(--tw-text-opacity));
@@ -4989,9 +5036,9 @@ textarea.form-control.is-invalid{
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
-.text-\[\#698dae\]{
+.text-blue-700{
   --tw-text-opacity: 1;
-  color: rgb(105 141 174 / var(--tw-text-opacity));
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 .opacity-50{
@@ -5065,6 +5112,10 @@ textarea.form-control.is-invalid{
   transition-duration: 500ms;
 }
 
+.duration-300{
+  transition-duration: 300ms;
+}
+
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -5097,6 +5148,10 @@ textarea.form-control.is-invalid{
   color: white;
 }
 
+.slide .switch {
+  left: 50%;
+}
+
 .placeholder\:text-center::-moz-placeholder{
   text-align: center;
 }
@@ -5122,6 +5177,39 @@ textarea.form-control.is-invalid{
 .placeholder\:text-white::placeholder{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.after\:absolute::after{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:inset-0::after{
+  content: var(--tw-content);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.after\:-z-10::after{
+  content: var(--tw-content);
+  z-index: -10;
+}
+
+.after\:h-full::after{
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.after\:w-full::after{
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.after\:bg-\[rgba\(0\2c 0\2c 0\2c 0\.7\)\]::after{
+  content: var(--tw-content);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .hover\:bg-yellow-600:hover{
@@ -5302,3 +5390,4 @@ textarea.form-control.is-invalid{
     grid-template-columns: 225px 1fr;
   }
 }
+  
