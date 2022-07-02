@@ -3985,6 +3985,38 @@ textarea.form-control.is-invalid{
   left: 0.75rem;
 }
 
+.bottom-8{
+  bottom: 2rem;
+}
+
+.bottom-6{
+  bottom: 1.5rem;
+}
+
+.left-1\/2{
+  left: 50%;
+}
+
+.left-2\.5{
+  left: 0.625rem;
+}
+
+.left-2{
+  left: 0.5rem;
+}
+
+.left-\[25\%\]{
+  left: 25%;
+}
+
+.left-\[35\%\]{
+  left: 35%;
+}
+
+.left-\[31\%\]{
+  left: 31%;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -4652,6 +4684,54 @@ textarea.form-control.is-invalid{
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+.bg-blue-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.bg-blue-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.bg-red-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
+.bg-green-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-30{
+  --tw-bg-opacity: 0.3;
+}
+
+.bg-opacity-60{
+  --tw-bg-opacity: 0.6;
+}
+
 .bg-\[url\(\'\.\.\/assets\/images\/board\.jpg\'\)\]{
   background-image: url('../assets/images/board.jpg');
 }
@@ -5314,16 +5394,40 @@ textarea.form-control.is-invalid{
     height: 3.5rem;
   }
 
+  .sm\:h-screen{
+    height: 100vh;
+  }
+
   .sm\:max-h-\[596px\]{
     max-height: 596px;
+  }
+
+  .sm\:max-h-\[550px\]{
+    max-height: 550px;
   }
 
   .sm\:w-14{
     width: 3.5rem;
   }
 
+  .sm\:w-\[211px\]{
+    width: 211px;
+  }
+
+  .sm\:w-full{
+    width: 100%;
+  }
+
   .sm\:max-w-\[350px\]{
     max-width: 350px;
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
   }
 
   .sm\:justify-center{
@@ -5347,9 +5451,19 @@ textarea.form-control.is-invalid{
     border-bottom-left-radius: 1.5rem;
   }
 
+  .sm\:bg-gray-600{
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  }
+
   .sm\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .sm\:text-2xl{
