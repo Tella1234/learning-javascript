@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Tabs</title>
+    <style>
+        .active {
+            background-color: white;
+        }
+        .content-active {
+            display: block;
+        }
+    </style>
+  </head>
+  <body class="font-nunito capitalize">
+    <section class="py-5">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl mb-4 font-semibold">about</h2>
+          <p class="w-4/5 mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            aperiam!
+          </p>
+        </div>
+  
+        <div class="py-8 px-6 lg:grid lg:grid-cols-2 lg:gap-x-8 w-[90vw] mx-auto max-w-6xl lg:w-[85vw]">
+          <article class="mb-8 lg:mb-0 ">
+            <img class="rounded-2xl object-cover h-80 mx-auto" src="../assets/images/hero-bcg.jpeg" alt="" />
+          </article>
+          <article class="bg-gray- rounded-xl grid grid-row-2">
+            <!-- btn container -->
+            <div class="grid grid-cols-3 rounded-xl bg-gray-300 w-[468px] lg:w-full mx-auto about">
+              <button class="py-4 capitalize block  cursor-pointer transition duration-700 active tab-btn" data-id="history">history</button>
+              <button class="py-4 capitalize block  cursor-pointer transition duration-700 tab-btn" data-id="vision">vision</button>
+              <button class="py-4 capitalize block  cursor-pointer transition duration-700 tab-btn" data-id="goals">goals</button>
+            </div>
+            <div class="py-8 px-6 max-w-[468px] lg:max-w-full mx-auto">
+              <!-- single item -->
+              <div class="hidden content transition duration-700 content-active" id="history">
+                <h4 class="font-semibold text-lg">history</h4>
+                <p class="text-gray-500">
+                  I'm baby wolf pickled schlitz try-hard normcore marfa man bun
+                  mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
+                  rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard
+                  tilde try-hard, woke fixie banjo man bun. Small batch tumeric
+                  mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
+                  direct trade hoodie ugh chambray, craft beer pork belly flannel
+                  tacos single-origin coffee art party migas plaid pop-up.
+                </p>
+              </div>
+              <!-- end of single item -->
+              <!-- single item -->
+              <div class="hidden transition duration-700 content" id="vision">
+                <h4 class="font-semibold text-lg">vision</h4>
+                <p class="text-gray-500">
+                    Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
+                  crucifix offal deep v hella biodiesel. Church-key listicle
+                  polaroid put a bird on it chillwave palo santo enamel pin,
+                  tattooed meggings franzen la croix cray. Retro yr aesthetic four
+                  loko tbh helvetica air plant, neutra palo santo tofu mumblecore.
+                  Hoodie bushwick pour-over jean shorts chartreuse shabby chic.
+                  Roof party hammock master cleanse pop-up truffaut, bicycle
+                  rights skateboard affogato readymade sustainable deep v
+                  live-edge schlitz narwhal.
+                </p>
+                <ul>
+                  <li>list item</li>
+                  <li>list item</li>
+                  <li>list item</li>
+                </ul>
+              </div>
+              <!-- end of single item -->
+              <!-- single item -->
+              <div class="hidden transition duration-700 content" id="goals">
+                <h4 class="font-semibold text-lg">goals</h4>
+                <p class="text-gray-500">
+                    Chambray authentic truffaut, kickstarter brunch taxidermy vape
+                  heirloom four dollar toast raclette shoreditch church-key.
+                  Poutine etsy tote bag, cred fingerstache leggings cornhole
+                  everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk
+                  swag, mixtape hashtag marfa readymade direct trade man braid
+                  cold-pressed roof party. Small batch adaptogen coloring book
+                  heirloom. Letterpress food truck hammock literally hell of wolf
+                  beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie,
+                  banh mi salvia venmo photo booth quinoa chicharrones.
+                </p>
+              </div>
+              <!-- end of single item -->
+            </div>
+          </article>
+        </div>
+    </section>
+    
+    <!-- javascript -->
+    <script src="../scripts/tabs.js"></script>
+  </body>
+</html>
