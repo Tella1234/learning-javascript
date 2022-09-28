@@ -4013,6 +4013,14 @@ textarea.form-control.is-invalid{
   z-index: -20;
 }
 
+.z-10{
+  z-index: 10;
+}
+
+.z-0{
+  z-index: 0;
+}
+
 .float-left{
   float: left;
 }
@@ -4198,12 +4206,20 @@ textarea.form-control.is-invalid{
   height: 150px;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .h-8{
   height: 2rem;
 }
 
-.h-80{
-  height: 20rem;
+.h-\[40px\]{
+  height: 40px;
+}
+
+.h-\[25px\]{
+  height: 25px;
 }
 
 .max-h-screen{
@@ -4272,6 +4288,14 @@ textarea.form-control.is-invalid{
   width: 123px;
 }
 
+.w-4\/5{
+  width: 80%;
+}
+
+.w-\[468px\]{
+  width: 468px;
+}
+
 .w-28{
   width: 7rem;
 }
@@ -4280,12 +4304,16 @@ textarea.form-control.is-invalid{
   width: 50%;
 }
 
-.w-4\/5{
-  width: 80%;
+.w-3\/5{
+  width: 60%;
 }
 
-.w-\[468px\]{
-  width: 468px;
+.w-2\/5{
+  width: 40%;
+}
+
+.w-\[120px\]{
+  width: 120px;
 }
 
 .max-w-6xl{
@@ -4330,10 +4358,6 @@ textarea.form-control.is-invalid{
 
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3{
@@ -4698,9 +4722,20 @@ textarea.form-control.is-invalid{
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+.bg-black\/50{
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+.bg-black\/80{
+  background-color: rgb(0 0 0 / 0.8);
+}
+
+.bg-black\/90{
+  background-color: rgb(0 0 0 / 0.9);
+}
+
+.bg-black\/95{
+  background-color: rgb(0 0 0 / 0.95);
 }
 
 .bg-opacity-60{
@@ -4725,6 +4760,18 @@ textarea.form-control.is-invalid{
 
 .bg-\[url\(\'\.\.\/assets\/images\/peopleonline\.jpg\'\)\]{
   background-image: url('../assets/images/peopleonline.jpg');
+}
+
+.bg-\[url\(\'\/assets\/images\/download\.jpeg\'\)\]{
+  background-image: url('/assets/images/download.jpeg');
+}
+
+.bg-\[url\(\'\/assets\/images\/login\.jpeg\'\)\]{
+  background-image: url('/assets/images/login.jpeg');
+}
+
+.bg-\[url\(\'\/assets\/images\/login\.jpg\'\)\]{
+  background-image: url('/assets/images/login.jpg');
 }
 
 .from-\[\#A3CABB\]{
@@ -4909,6 +4956,26 @@ textarea.form-control.is-invalid{
   padding-bottom: 0.25rem;
 }
 
+.px-\[180px\]{
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.py-\[60px\]{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pt-4{
   padding-top: 1rem;
 }
@@ -4981,6 +5048,11 @@ textarea.form-control.is-invalid{
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -5091,19 +5163,9 @@ textarea.form-control.is-invalid{
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
-.text-blue-300{
+.text-yellow-500{
   --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
-}
-
-.text-blue-400{
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
-}
-
-.text-blue-500{
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 .opacity-50{
@@ -5177,12 +5239,12 @@ textarea.form-control.is-invalid{
   transition-duration: 500ms;
 }
 
-.duration-300{
-  transition-duration: 300ms;
-}
-
 .duration-700{
   transition-duration: 700ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
 }
 
 .ease-in-out{
